@@ -7,7 +7,7 @@ allows using Markdown.
 
 ## Usage
 
-- install pandoc, pdflatex, bibtex
+- install pandoc, pandoc-citeproc, pdflatex, bibtex
 - write your thesis
 	- fill in information about the thesis in `metadata.tex`
 	- put new chapters in the `chapters` directory
