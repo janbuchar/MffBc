@@ -14,3 +14,11 @@ allows using Markdown.
 	- list the chapters in the `CHAPTERS` variable in the Makefile
 	- list any cited resources in `literature.bib`
 - run `make`
+
+## Credits
+
+The author of the TeX files is Martin Mareš (original can be downloaded from 
+[his website](http://mj.ucw.cz/vyuka/bc/). I split `thesis.tex` into `start.tex` 
+and `end.tex` to enable inserting pandoc-converted chapters. I also moved data 
+about the thesis to `metadata.tex` and set up BibTeX (and thus removed 
+`bibliography.tex`).
