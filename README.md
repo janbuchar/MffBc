@@ -22,3 +22,9 @@ The author of the TeX files is Martin Mareš (original can be downloaded from
 and `end.tex` to enable inserting pandoc-converted chapters. I also moved data 
 about the thesis to `metadata.tex` and set up BibTeX (and thus removed 
 `bibliography.tex`).
+
+## License
+
+The contents of this repository are derived from the templates by Martin Mareš
+and follow the same license (anyone is free to use, share and modify it, as 
+stated in the original readme).
