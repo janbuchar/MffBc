@@ -11,7 +11,6 @@ allows using Markdown.
 - write your thesis
 	- fill in information about the thesis in `metadata.tex`
 	- put new chapters in the `chapters` directory
-	- list the chapters in the `CHAPTERS` variable in the Makefile
 	- list any cited resources in `literature.bib`
 - run `make`
 

@@ -1,10 +1,10 @@
 NAME = thesis
-CHAPTERS = 01_chapter 02_chapter 03_chapter
 
 CHAPTERS_DIR = chapters
 BUILD_DIR = build
 BIB = literature.bib
 
+CHAPTERS = $(shell ls $(CHAPTERS_DIR) | sed 's/\..*//g')	# probably for GNU make only
 CHAPTERS_TEX = $(CHAPTERS:%=$(BUILD_DIR)/%.tex)
 COMBINED_TEX = $(BUILD_DIR)/$(NAME).combined.tex
 PDFL_FLAGS = -jobname $(NAME)
@@ -41,3 +41,4 @@ clean:
 	- rm -f *.log *.dvi *.aux *.toc *.lof *.lot *.out
 	- rm -f $(NAME).pdf
 	- rm -f $(NAME).bbl $(NAME).blg
+
