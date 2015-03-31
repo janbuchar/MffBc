@@ -1,7 +1,8 @@
 NAME = thesis
-CHAPTERS = 01_chapter 02_chapter 03_chapter
-
 CHAPTERS_DIR = chapters
+CHAPTER_FILES = $(wildcard $(CHAPTERS_DIR)/*.tex $(CHAPTERS_DIR)/*.md)
+CHAPTERS = $(notdir $(basename $(CHAPTER_FILES)))
+
 BUILD_DIR = build
 BIB = literature.bib
 
