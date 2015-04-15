@@ -6,7 +6,7 @@
 %% For more detailed info use svn repository svn://kraken.pedf.cuni.cz/csplainnat/
 %%
 %% Original plainnat.bst by Patrick W Daly
-%% Modifications by David Mudr{\'{a}}k mudrd8mz@uxit.pedf.cuni.cza
+%% Modifications by David Mudr{\'{a}}k mudrd8mz@uxit.pedf.cuni.cz
 %%
 %% MAJOR MODIFICATIONS
 %% * Added "@ONLINE" item type with added "cited" field.
