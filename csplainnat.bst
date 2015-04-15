@@ -314,7 +314,7 @@ FUNCTION {format.issn}
 FUNCTION {format.url}
 { url empty$
     { "" }
-    { new.block "Dostupn{\'{e}}~z: $\texttt{<{" url * "}>}$" * }
+    { new.block "Available from: $\texttt{<{" url * "}>}$" * }
   if$
 }
 
