@@ -6,7 +6,7 @@
 %% For more detailed info use svn repository svn://kraken.pedf.cuni.cz/csplainnat/
 %%
 %% Original plainnat.bst by Patrick W Daly
-%% Modifications by David Mudr{\'{a}}k mudrd8mz@uxit.pedf.cuni.cz
+%% Modifications by David Mudr{\'{a}}k mudrd8mz@uxit.pedf.cuni.cza
 %%
 %% MAJOR MODIFICATIONS
 %% * Added "@ONLINE" item type with added "cited" field.
@@ -314,7 +314,7 @@ FUNCTION {format.issn}
 FUNCTION {format.url}
 { url empty$
     { "" }
-    { new.block "Available from: $\texttt{<{" url * "}>}$" * }
+    { new.block "Available~from: $\texttt{<{" url * "}>}$" * }
   if$
 }
 
