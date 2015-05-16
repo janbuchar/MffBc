@@ -30,15 +30,15 @@ $(BUILD_DIR)/%.tex: $(CHAPTERS_DIR)/%.tex
 	cp $< $@
 
 $(BUILD_DIR)/%.tex: $(CHAPTERS_DIR)/%.md
-	pandoc --chapters --natbib --biblio $(BIB) -o $@ $<
+	pandoc --chapters --biblatex --biblio $(BIB) -o $@ $<
 
 $(NAME).bbl: $(BIB) $(COMBINED_TEX)
 	rm -f $(NAME).bbl
 	pdflatex $(PDFL_FLAGS) $(COMBINED_TEX)
-	bibtex $(NAME)
+	biber $(NAME)
 
 clean:
 	- rm -rf $(BUILD_DIR)
 	- rm -f *.log *.dvi *.aux *.toc *.lof *.lot *.out
 	- rm -f $(NAME).pdf
-	- rm -f $(NAME).bbl $(NAME).blg
+	- rm -f $(NAME).bbl $(NAME).blg $(NAME).bcf $(NAME).run.xml
